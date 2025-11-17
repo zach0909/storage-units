@@ -1,10 +1,10 @@
 <template>
     <!-- Navbar start -->
-    <nav class="w-screen fixed bg-opacity-90 bg-white p-4 lg:px-20 flex justify-between z-50">
+    <nav class="w-screen fixed bg-opacity-90 bg-white p-4 lg:px-20 flex justify-between items-center z-50">
 		<!-- Logo start -->
 		<div class="h-full flex flex-col justify-center">
-			<p class="tracking-widest font-semibold">LANDING</p>
-			<p class="tracking-widest font-light">PHOTOGRAPHY</p>
+			<p class="tracking-widest font-semibold text-teal-900">Jeff's Stow & Go</p>
+			<p class="tracking-widest font-light text-teal-900">SELF STORAGE</p>
 		</div>
 		<!-- Logo end -->
 
@@ -21,15 +21,15 @@
 				<p class="mx-4">Home</p>
 			</a>
 
-			<a href="#" role="menuitem">
+			<a href="#about-section" role="menuitem">
 				<p class="mx-4">About</p>
 			</a>
 
-			<a href="#" role="menuitem">
-				<p class="mx-4">Explore</p>
+			<a href="#services-section" role="menuitem">
+				<p class="mx-4">Services</p>
 			</a>
 
-			<button class="btn" role="menuitem">
+			<button class="btn bg-teal-900" role="menuitem" @click="handleContactUsButtonClick">
 				Contact us
 			</button>
 			<!-- Links end -->
@@ -50,8 +50,14 @@ export default {
 			menu.setAttribute('aria-expanded', !isExpanded);
 			menu.classList.toggle('hidden');
 			menu.classList.toggle('flex');
+		},
+		handleContactUsButtonClick() {
+			const element = document.getElementById('contact-section');
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
 		}
-    }
+	}
 }
 </script>
 

@@ -12,10 +12,6 @@
 	<service-section></service-section>
 	<!-- Services section end -->
 
-	<!-- Portfolio section start -->
-	<portfolio-section></portfolio-section>
-	<!-- Portfolio section end -->
-
 
 	<!-- Contact section start -->
 	<contact-section></contact-section>
@@ -27,7 +23,6 @@
 import MainSection from '@/sections/MainSection.vue';
 import AboutSection from '@/sections/AboutSection.vue';
 import ServiceSection from '@/sections/ServiceSection.vue';
-import PortfolioSection from '@/sections/PortfolioSection.vue';
 import ContactSection from '@/sections/ContactSection.vue';
 
 export default {
@@ -35,7 +30,6 @@ export default {
 		MainSection,
 		AboutSection,
 		ServiceSection,
-		PortfolioSection,
 		ContactSection,
 	}
 }
